@@ -1,6 +1,5 @@
 import './App.css';
-import { FaArrowRight } from "react-icons/fa";
-import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft, FaBattleNet, FaLinode } from "react-icons/fa";
 
 function App() {
   return (
@@ -47,11 +46,19 @@ function App() {
           <div className="leftnav">< FaArrowLeft size={'1.5rem'} color= {'#FA573A'}/></div>
           <div className="slider-wrapper">
             <div className="slider-box">
-              <div className="slider-img"></div>
+              <div className="slider-img">< FaBattleNet className='slider-fa'/> </div>
               <div className="slider-text">
                 <h2>Our Innovations</h2>
                 <h3>We have built products in the tech industry that allows us to gain more publicity and gives us the leverage to reach more people</h3>
-                <p>Read More</p>
+                <p className='more'>Read More -{'>'}</p>
+              </div>
+            </div>
+            <div className="slider-box">
+              <div className="slider-img">< FaLinode className='slider-fa'/> </div>
+              <div className="slider-text">
+                <h2>We Build</h2>
+                <h3>We work with proffessionals in production and we make sure our tech community at large helps our client to get the best service</h3>
+                <p className='more'>Read More -{'>'}</p>
               </div>
             </div>
           </div>

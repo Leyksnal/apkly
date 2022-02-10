@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lato:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700&family=Nova+Cut&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Abril+Fatface&family=Alfa+Slab+One&family=Lato:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700&family=Nova+Cut&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&family=Teko:wght@400;500;600;700&display=swap');
 
 .hero-bg{
   width: 100%;
@@ -196,6 +196,12 @@
   align-items: center;
 }
 
+.overview-section > h2{
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: 'Abril+Fatface';
+}
+
 .slider-container{
   width: 90%;
   display: flex;
@@ -204,6 +210,84 @@
 }
 
 .slider-wrapper{
-  background-color: brown;
   width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-box{
+  background-color: #fff;
+  width: 49%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid 5px #FA573A;
+  box-shadow: 0px 15px 15px 1px rgba(65, 64, 64, 0.616);
+}
+
+.slider-box:hover > .slider-img{
+  background-color: #FA573A;
+}
+
+.slider-box:hover > .slider-img .slider-fa{
+  color: #fff;
+}
+
+
+.slider-img{
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: solid 2px #FA573A;
+  transition: all 500ms;
+  margin-top: 30px;
+}
+
+
+.slider-text{
+  width: 400px;
+}
+
+.slider-fa{
+  font-size: 3.5rem;
+  color: #FA573A;
+}
+
+.slider-img:hover .slider-fa{
+  color: #fff;
+}
+
+.slider-text > h2{
+  font-size: 2rem;
+  color: #21252E;
+  position: relative;
+}
+
+.slider-text > h2::after{
+  content: '';
+  background-color: #FA573A;
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.slider-text > h3{
+  color: #2f2f30;
+}
+
+.slider-text > p{
+  font-size: 1.3rem;
+  color: #FA573A;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.more{
+  display: flex;
+  align-items: center;
 }
