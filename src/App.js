@@ -1,5 +1,5 @@
 import './App.css';
-import { FaArrowRight, FaArrowLeft, FaBattleNet, FaLinode } from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft, FaBattleNet, FaLinode, FaMedal, FaDatabase, FaRenren, FaOldRepublic } from "react-icons/fa";
 
 function App() {
   return (
@@ -63,6 +63,36 @@ function App() {
             </div>
           </div>
           <div className="rightnav">< FaArrowRight size={'1.5rem'} color= {'#FA573A'}/></div>
+        </div>
+      </div>
+
+      <div className="overview-section feature-section">
+        <h2>Feature</h2>
+        <div className="feature-container">
+          <div className="feature-box-left">
+            <div className="feature-img"></div>
+          </div>
+          <div className="feature-box-rigth">
+            <h2>Unlock the best,</h2>
+            <h3>Technology project Here</h3>
+            <p>We have the best proffessionals to help you carry out your work and make sure your team helps you increaase in production</p>
+            <div className="feature-icon">
+              <div className="icon">< FaMedal className='feature-fa' /></div>
+              <h3>Award winning startup 2021</h3>
+            </div>
+            <div className="feature-icon">
+              <div className="icon">< FaDatabase className='feature-fa' /></div>
+              <h3>We have a secured database</h3>
+            </div>
+            <div className="feature-icon">
+              <div className="icon">< FaRenren className='feature-fa' /></div>
+              <h3>Best Recommendations</h3>
+            </div>
+            <div className="feature-icon">
+              <div className="icon">< FaOldRepublic className='feature-fa' /></div>
+              <h3>We perform secured operations</h3>
+            </div>
+          </div>
         </div>
       </div>
 
